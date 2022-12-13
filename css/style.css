@@ -191,6 +191,26 @@ header .head .left button{
     margin-bottom: 50px;
 }
 
+
+@media(max-width:570px){
+    .navbar .navbar-brand img{
+        width: 50px !important;
+    }
+    .navbar h2{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media(max-width:451px){
+    .navbar .navbar-brand img{
+        width:50px!important;
+    }
+    .navbar h2{
+        font-size: 1.1rem !important;
+
+    }
+}
+
 header .head .left button:hover {
     animation: gradient 3s infinite;
     transform: scale(1.05);
@@ -287,7 +307,7 @@ header .head .left button:hover {
 }
 
 .dub_modal .modal .modal-body .card .blank_img{
-    width: 320px;
+    width: 300px;
     height: 28vh;
     background: gray;
     border-radius: 8px;
@@ -298,10 +318,21 @@ header .head .left button:hover {
     color: #ccc !important;
 }
 
-.dub_modal .modal .modal-body .card .card-body input{
-   width: 100%;
+.dub_modal .modal .modal-body .card .card-body .input1,
+.dub_modal .modal .modal-body .card .card-body .input2{
+   width: 74%;
+   margin-left: -1rem;
    height: 40px;
    padding: 15px;
+   border: none;
+   border-radius: 12px;
+}
+
+.dub_modal .modal .modal-body .card .card-body .save_btn{
+   width: 25%;
+   text-align: center;
+   margin-top: -0.5rem;
+   /* margin-left: 0rem; */
    border: none;
    border-radius: 12px;
 }
@@ -309,4 +340,124 @@ header .head .left button:hover {
 .dub_modal .modal .modal-body .card .card-body input::placeholder{
   font-size: 20px;
   color: #032f4e;
+}
+
+.card .card-body .no_hover button:hover{
+    border-radius: unset !important;
+}
+@media(max-width:991px){
+    .main_modal .modal-dialog{
+        max-width: 700px !important;
+    }
+}
+
+@media(max-width:767px){
+    .main_modal .modal-dialog{
+        max-width: 450px !important;
+    }
+    .main_modal .modal-content{
+        height: 130vh !important;
+    }
+    .main_modal .modal-body{
+        margin-left: 3rem;
+    }
+    .main_modal .modal-body .card{
+        height: 100%;
+    }
+    .main_modal .modal-body .card2{
+        margin-top: 1.2rem;
+    }
+    .main_modal .modal-body .card2:hover{
+        margin-top: -0.5rem;
+    }
+    .main_modal .modal-body .card:hover{
+        height: 100%;
+    }
+    .main_modal .modal-body .card button{
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:450px){
+    .main_modal .modal-body{
+        margin-left: 2rem;
+    }
+}
+
+@media(max-width:420px){
+    .main_modal .modal-body{
+        margin-left: 0.8rem;
+    }
+}
+
+@media(max-width:375px){
+    .main_modal .modal-body{
+        margin-left: 0.2rem;
+    }
+}
+
+@media(max-width:991px){
+    .dub_modal .modal-dialog{
+        max-width: 750px !important;
+    }
+    .dub_modal .modal .modal-body .card .blank_img{
+        width: 310px;
+        height: 28vh;
+    }
+    .dub_modal .modal .modal-body .card .input1,
+    .dub_modal .modal .modal-body .card .card-body .input2{
+        width: 70% !important;
+        margin-left: 0.2rem !important;
+    }
+    .dub_modal .modal .modal-body .card .save_btn{
+        /* font-size: ; */
+        width: 25% !important;
+    }
+}
+
+@media(max-width:767px){
+    .dub_modal .modal-dialog{
+        max-width: 400px !important;
+    }
+    .dub_modal .modal .modal-body .card .blank_img{
+        width: 355px;
+        height: 28vh;
+    }
+    .dub_modal .modal .modal-body .card .input1,
+    .dub_modal .modal .modal-body .card .card-body .input2{
+        margin-left: 0.5rem;
+        width: 95% !important;
+    }
+    .dub_modal .modal .modal-body .card .save_btn{
+        /* font-size: ; */
+        width: 30% !important;
+        margin-top: 1.2rem !important;
+        margin-left: 6.5rem;
+    }
+    .dub_modal .modal .modal-body .card{
+        height: 48vh;
+    }
+}
+
+@media(max-width:410px){
+    .dub_modal .modal .modal-body .card .blank_img{
+        width: 98%;
+        height: 28vh;
+    }
+    .dub_modal .modal .modal-body .card .input1,
+    .dub_modal .modal .modal-body .card .card-body .input2{
+        width: 98% !important;
+        
+    }
+
+    .dub_modal .modal .modal-body .card .save_btn{
+        /* font-size: ; */
+        width: 45% !important;
+        margin-top: 1.2rem !important;
+        margin-left: 4.5rem;
+    }
+    
+    .dub_modal .modal .modal-body .card{
+        height: 49vh;
+    }
 }
